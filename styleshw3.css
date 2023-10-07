@@ -1,0 +1,75 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font: 18px / 2px Arial, sans-serif;
+    font-weight: normal;
+  }
+  
+  body {background: silver;
+  }
+  
+  .widebutton{grid-column: span 2;}
+  
+  .tallbutton{grid-row: span 2;}
+
+  .layout {
+    display: grid;
+    justify-content:left;
+    align-content: center;
+    border:none;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.35),;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(110px, auto) repeat(5, 80px);
+  }
+  
+  .layout > button {
+    font-size: 2rem;
+    border: 2px solid rgba(24, 19, 19, 0.87);
+    outline: none;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.35),;
+    background-color: rgba(245, 245, 245, 0.904);
+  }
+
+
+  .clearlayout > button {
+    font-size: 2rem;
+    border: 2px solid rgba(46, 13, 13, 0.87);
+    outline: none;
+    background-color: rgba(255, 17, 17, 0.75);
+}
+  
+.clearbutton1 {
+    font-size: 2rem;
+    border: 2px solid rgba(24, 19, 19, 0.87);
+    outline: none;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.35),;
+    background-color: rgba(255, 75, 75, 0.75);
+  }
+
+
+  .layout > button:hover {
+    background-color: rgba(237, 237, 237, 0.514);
+  }
+
+  .result .firstvalue1 {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  .result .secondvalue1 {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .result {
+    grid-column: 1 / -1;
+    background-color: black;
+    outline: none;
+    flex-direction: column;
+    display: flex;
+    align-items: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+    justify-content:space-evenly;
+    padding: 8px;
+  }
+  
